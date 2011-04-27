@@ -12,8 +12,7 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$('.portfolio').fbslider('init');
-			$('.monkeys').fbslider('init');
+			$('.fbslider').fbslider('init');
 		});
 	</script>
 	
@@ -28,8 +27,50 @@
 		</div>
 		
 		<div data-role="content">
+			
+			<h2>About</h2>
+			<p>A jQuery plugin to be used with jQuery Mobile.  Virtual mouse events (vclick, vmousemove, etc) are bound to the slider controls.  Calculations such as masking and movement amounts are calculated in fbslider.js and initial values such as slider width, and sets to move are set in css. Multiple sliders can be present on a single page.</p>
+			
+			<h2>Requirements</h2>
+			<p>
+				<ul>
+					<li>jQuery 1.5.2</li>
+					<li>jQuery Mobile Alpha 4.1</li>
+				</ul>
+			</p>
+			
+			<h2>Instructions</h2>
+			<h3>HTML</h3>
+				<pre>
+&lt;div class=&quot;fbslider&quot;&gt;
+  &lt;div class=&quot;sets&quot;&gt;
+    &lt;div class=&quot;set&quot;&gt;&lt;img src=&quot;river1.jpg&quot; width=&quot;296&quot; height=&quot;200&quot;/&gt;&lt;/div&gt;
+    &lt;div class=&quot;set&quot;&gt;&lt;img src=&quot;river2.jpg&quot; width=&quot;296&quot; height=&quot;200&quot;/&gt;&lt;/div&gt;
+    &lt;div class=&quot;set&quot;&gt;&lt;img src=&quot;river3.jpg&quot; width=&quot;296&quot; height=&quot;200&quot;/&gt;&lt;/div&gt;
+    &lt;div class=&quot;set&quot;&gt;&lt;img src=&quot;river4.jpg&quot; width=&quot;296&quot; height=&quot;200&quot;/&gt;&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;div class=&quot;control&quot;&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;cap-start&quot;&gt;&amp;nbsp;&lt;/li&gt;
+      &lt;li class=&quot;dot&quot;&gt;&amp;bull;&lt;/li&gt;
+      &lt;li class=&quot;dot&quot;&gt;&amp;bull;&lt;/li&gt;
+      &lt;li class=&quot;dot&quot;&gt;&amp;bull;&lt;/li&gt;
+      &lt;li class=&quot;dot&quot;&gt;&amp;bull;&lt;/li&gt;
+      &lt;li class=&quot;cap-end&quot;&gt;&amp;nbsp;&lt;/li&gt;
+     &lt;/ul&gt;
+    &lt;div class=&quot;handle&quot;&gt;&amp;bull;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;			
+				</pre>		
+				
+			<h3>JavaScript</h3>
+			
+			<pre>
+$('.fbslider').fbslider('init');
+</pre>			
+			<h2>Examples</h2>
 		
-			<div class="floatbit-slider portfolio">
+			<div class="fbslider">
 				<div class="sets">
 					<div class="set"><img src="river1.jpg" width="296" height="200"/></div>
 					<div class="set"><img src="river2.jpg" width="296" height="200"/></div>
@@ -49,7 +90,7 @@
 				</div>
 			</div>
 			
-			<div class="floatbit-slider monkeys">
+			<div class="fbslider">
 				<div class="sets">
 					<div class="set"><img src="river1.jpg" width="296" height="200"/></div>
 					<div class="set"><img src="river4.jpg" width="296" height="200"/></div>
