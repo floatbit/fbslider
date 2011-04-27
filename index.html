@@ -23,13 +23,13 @@
 		
 					
 		<div data-role="header" data-backbtn="false">
-			<h1>Slider</h1>
+			<h1>fbslider</h1>
 		</div>
 		
 		<div data-role="content">
 			
 			<h2>About</h2>
-			<p>A jQuery plugin to be used with jQuery Mobile.  Virtual mouse events (vclick, vmousemove, etc) are bound to the slider controls.  Calculations such as masking and movement amounts are calculated in fbslider.js and initial values such as slider width, and sets to move are set in css. Multiple sliders can be present on a single page.</p>
+			<p>A jQuery plugin to be used with jQuery Mobile.  Virtual mouse events (vclick, vmousemove, etc) are bound to the slider controls.  Multiple sliders can be present on a single page.</p>
 			
 			<h2>Requirements</h2>
 			<p>
@@ -41,6 +41,7 @@
 			
 			<h2>Instructions</h2>
 			<h3>HTML</h3>
+			<p>The number of div.set must match the number of li.dot.  You can put whatever you like in the sets.  </p>
 				<pre>
 &lt;div class=&quot;fbslider&quot;&gt;
   &lt;div class=&quot;sets&quot;&gt;
@@ -68,6 +69,10 @@
 			<pre>
 $('.fbslider').fbslider('init');
 </pre>			
+
+			<h3>CSS</h3>
+			<p>Set styles of controls, set widths, etc.  One thing - the handle width must match the width of li.dot </p>
+			
 			<h2>Examples</h2>
 		
 			<div class="fbslider">
@@ -90,6 +95,8 @@ $('.fbslider').fbslider('init');
 				</div>
 			</div>
 			
+			<h3>&nbsp;</h3>
+			
 			<div class="fbslider">
 				<div class="sets">
 					<div class="set"><img src="river1.jpg" width="296" height="200"/></div>
@@ -114,7 +121,8 @@ $('.fbslider').fbslider('init');
 				</div>
 			</div>
 			
-			 
+			<h2>Author</h2>
+			<p><a href="http://www.floatbit.com" rel="external">Floatbit</a></p>
 	</div>
 </div>
 </body>
