@@ -1,0 +1,107 @@
+.portfolio,
+.monkeys {
+	margin-bottom: 20px;
+}
+
+.floatbit-slider {
+	width: 296px;
+	overflow: hidden;
+}
+.floatbit-slider .sets {
+	margin-bottom: 10px;
+	height: 200px;
+}
+.floatbit-slider .sets .set {
+	width: 296px;
+	height: 200px;
+	background-color: #333;
+}
+
+
+.floatbit-slider .set img {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.floatbit-slider .set .caption {
+	line-height: 20px;
+	height: 46px;
+	position: relative;
+	top: -54px;
+	background-color: rgba(0,0,0,0.80);
+	font-size: 19px;
+	font-weight: bold;
+	color: #b52424;
+	padding: 8px 0 0 10px;
+}
+.floatbit-slider .set .caption .when {
+	font-size: 12px;
+	font-weight: normal;
+	color: #a2a2a2;
+	display: block;
+}
+.floatbit-slider .sets {
+	overflow: hidden;
+	position: relative;
+}
+.floatbit-slider .sets .set {
+	float: left;
+}
+
+.control {
+	position: relative;
+	height: 29px;
+}
+.control ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.control ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table-cell;
+}
+.control ul li.dot {
+	width: 44px;
+	height: 30px;
+	background-color: #000;
+	text-align: center;
+	line-height: 30px;
+}
+.control ul li.cap-start {
+	width: 16px;
+	height: 30px;
+	background-color: #000;
+	text-align: center;
+	line-height: 30px;
+	border-top-left-radius: 10px 10px;
+	border-bottom-left-radius: 10px 10px;
+}
+.control ul li.cap-end {
+	width: 16px;
+	height: 30px;
+	background-color: #000;
+	text-align: center;
+	line-height: 30px;
+	border-top-right-radius: 10px 10px;
+	border-bottom-right-radius: 10px 10px;
+}
+.control ul li img {
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+}
+.control .handle {
+	width: 44px;
+	height: 30px;
+	background-color: #333;
+	color: #fff;
+	position: absolute;
+	left: 16px;
+	line-height: 30px;
+	top: 0px;
+	text-align: center;
+}

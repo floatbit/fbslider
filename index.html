@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<title>Slider</title>
+	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<link rel="stylesheet" href="fbslider.css" />	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	<script src="fbslider.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.portfolio').fbslider('init');
+			$('.monkeys').fbslider('init');
+		});
+	</script>
+	
+</head> 
+<body> 
+	
+	<div data-role="page" data-theme="b" class="event">
+		
+					
+		<div data-role="header" data-backbtn="false">
+			<h1>Slider</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<div class="floatbit-slider portfolio">
+				<div class="sets">
+					<div class="set"><img src="river1.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river2.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river3.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river4.jpg" width="296" height="200"/></div>
+				</div>
+				<div class="control">
+					<ul>
+						<li class="cap-start">&nbsp;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="cap-end">&nbsp;</li>
+					</ul>
+					<div class="handle">&bull;</div>
+				</div>
+			</div>
+			
+			<div class="floatbit-slider monkeys">
+				<div class="sets">
+					<div class="set"><img src="river1.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river4.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river2.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river3.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river4.jpg" width="296" height="200"/></div>
+					<div class="set"><img src="river1.jpg" width="296" height="200"/></div>
+				</div>
+				<div class="control">
+					<ul>
+						<li class="cap-start">&nbsp;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="dot">&bull;</li>
+						<li class="cap-end">&nbsp;</li>
+					</ul>
+					<div class="handle">&bull;</div>
+				</div>
+			</div>
+			
+			 
+	</div>
+</div>
+</body>
+</html>
